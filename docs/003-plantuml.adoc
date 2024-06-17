@@ -1,0 +1,22 @@
+## plantuml
+
+.クラス図
+[plantuml, target="images/class-diagram.png"]
+----
+@startuml
+class Animal {
+  run()
+}
+
+class Cat extends Animal {
+}
+@enduml
+----
+
+.ユースケース図
+[plantuml, target="images/usecase-diagram.png"]
+----
+actor ユーザー as user
+user -> ログイン : ログインする
+ログイン --> user:
+----

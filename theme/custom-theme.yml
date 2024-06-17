@@ -1,0 +1,81 @@
+extends: default
+font:
+  catalog:
+    merge: true
+    KaiGenGothic:
+      normal: /usr/share/fonts/kaigen/KaiGenGothicJP-Regular.ttf
+      bold: /usr/share/fonts/kaigen/KaiGenGothicJP-Bold.ttf
+      italic: /usr/share/fonts/kaigen/KaiGenGothicJP-Regular-Italic.ttf
+      bold_italic: /usr/share/fonts/kaigen/KaiGenGothicJP-Bold-Italic.ttf
+  fallbacks:
+    - KaiGenGothic
+
+base:
+  font-family: KaiGenGothic
+
+page:
+  background_color: ffffff
+  layout: portrait
+  margin: [0.5in, 0.67in, 0.67in, 0.67in]
+  margin_inner: 0.75in
+  margin_outer: 0.59in
+  size: A4
+
+header:
+  height: 0.75in
+  line-height: 1
+  recto:
+    center:
+      content: ~
+  verso:
+    center:
+      content: $header-recto-center-content
+
+footer:
+  line_height: 1
+  recto:
+    left:
+      content: '(C) footer-content  Ver.{revnumber}, {docdate}'
+    right:
+      content: '{page-number} / {page-count}'
+  verso:
+    left:
+      content: $footer-recto-left-content
+    right:
+      content: $footer-recto-right-content
+
+title_page:
+  align: center
+  title:
+    top: 20%
+    font_size: 36
+    font_style: bold
+    font_color: #000000
+    line_height: 1.6
+  subtitle:
+    font_size: 24pt
+    line_height: 1
+    margin_bottom: 11cm
+  authors:
+    font_size: 16pt
+  revision:
+    margin_top: $base_font_size * 1.25
+
+image:
+  align: center
+  caption:
+    align: center
+
+table:
+  caption:
+    align: center
+  head:
+    background-color: #F0F0F0
+    border-bottom-style: solid
+    border-bottom-width: 0.5
+    font-color: #000000
+    font-style: bold
+  border-style: solid
+  border-width: 0.5
+  border-color: #DDDDDD
+  cell-padding: [4, 6]

@@ -1,0 +1,78 @@
+## Sandbox
+
+Roses are red, +
+violets are blue.
+
+[%hardbreaks]
+A ruby is red.
+Java is black.
+
+
+.テーブルの幅
+[cols="10,~"]
+|===
+    |#     |Header
+
+    |1     |Cell in column 2, row 1
+
+    |2     |Cell in column 2, row 2
+|===
+
+
+ソースコード
+
+[source,bash]
+----
+docker run -it -u $(id -u):$(id -g) -v <your directory>:/documents/ asciidoctor/docker-asciidoctor
+----
+
+
+[source,c]
+----
+#include <stdio.h>
+
+int main(void) {
+    printf("hello world.");
+    return 0;
+}
+----
+
+* Level 1 list item
+** Level 2 list item
+*** Level 3 list item
+* Level 1 list item
+
+. Level 1 list item
+.. Level 2 list item
+... Level 3 list item
+. Level 1 list item
+1. List item one.
++
+List item one continued with a second paragraph followed by an
+Indented block.
++
+2. List item two.
+
+It has *strong* significance to me.
+
+I _cannot_ stress this enough.
+
+Type `OK` to accept.
+
+That *_really_* has to go.
+
+Can't pick one? Let's use them `*_all_*`.
+
+// A single-line comment
+
+NOTE: An admonition draws the reader's attention to auxiliary information.
+
+Here are the other built-in admonition types:
+
+IMPORTANT: Don't forget the children!
+
+TIP: Look for the warp zone under the bridge.
+
+CAUTION: Slippery when wet.
+
+WARNING: The software you're about to use is untested.

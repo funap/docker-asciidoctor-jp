@@ -1,0 +1,9 @@
+version: '3'
+services:
+  asciidoctor:
+    build: .
+    image: asciidoctor-image
+    container_name: asciidoctor
+    volumes:
+      - .:/docs
+    command: ['make', 'pdf']

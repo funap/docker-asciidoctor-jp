@@ -1,0 +1,20 @@
+:lang: ja
+:doctype: book
+:title: タイトル
+:author: AUTHOR
+:revdate: 2024/06/16
+:revnumber: 1.0
+:toc: left
+:toclevels: 3
+:sectnums:
+:chapter-signifier:
+
+= {title}
+
+include::001.adoc[]
+
+include::002-table.adoc[]
+
+include::003-plantuml.adoc[]
+
+include::004-sandbox.adoc[]
