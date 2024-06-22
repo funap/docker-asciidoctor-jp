@@ -2,9 +2,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Docker Compose Up",
+            "label": "Podman Compose Up",
             "type": "shell",
-            "command": "docker-compose up",
+            "command": "podman compose up",
             "group": {
                 "kind": "build",
                 "isDefault": true
