@@ -4,5 +4,5 @@ services:
     image: asciidoctor-image
     container_name: asciidoctor
     volumes:
-      - .:/docs
+      - .:/docs:z
     command: ['make', 'pdf']
