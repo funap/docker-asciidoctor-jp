@@ -3,15 +3,11 @@ FROM ubuntu:24.04
 
 RUN apt update && apt install -y \
     wget \
-    curl \
-    git \
     graphviz \
     make \
     default-jre \
     ruby \
-    ruby-dev \
-    build-essential \
-    zlib1g-dev \
+    && apt clean -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN gem install asciidoctor \
