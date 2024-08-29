@@ -1,4 +1,4 @@
-# Asciidoctor-docker-jp
+# Asciidoctor-jp
 
 このプロジェクトは、Asciidoctorを使用して日本語のPDF文書を生成するための環境を提供します。
 Podman Desktopが動作する環境で簡単に日本語のPDF作成できるようにすることがプロジェクトの目的です。
