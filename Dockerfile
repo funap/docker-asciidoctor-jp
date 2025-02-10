@@ -1,4 +1,3 @@
-# ベースイメージとして公式のUbuntuイメージを使用
 FROM ubuntu:24.04
 
 RUN apt update && apt install -y \
