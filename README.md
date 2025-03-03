@@ -1,21 +1,21 @@
 # Asciidoctor-jp
 
 このプロジェクトは、Asciidoctorを使用して日本語のPDF文書を生成するための環境を提供します。
-Podman Desktopが動作する環境で簡単に日本語のPDF作成できるようにすることがプロジェクトの目的です。
+Rancher Desktopが動作する環境で簡単に日本語のPDF作成できるようにすることがプロジェクトの目的です。
 
 ## 前提条件
 
-Podman DesktopをWindowsにインストールする
+Rancher DesktopをWindowsにインストールする
 ```sh
-winget install -e --id RedHat.Podman-Desktop
+winget install -e --id suse.RancherDesktop
 ```
 
 ## PDF作成手順
 
-エクスプローラのアドレスバーにpwshと入力後してコンソールを開き、`podman compose up`でPDFが作成できます。
+エクスプローラのアドレスバーにpwshと入力後してコンソールを開き、`docker compose run --rm asciidoctor`でPDFが作成できます。
 
 ```sh
-podman compose up
+docker compose run --rm asciidoctor
 ```
 初回実行時のみ、イメージのビルドが行われるので時間がかかります。
 

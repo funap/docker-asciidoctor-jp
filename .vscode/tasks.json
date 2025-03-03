@@ -2,9 +2,15 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Podman Compose Up",
+            "label": "Compose Run",
             "type": "shell",
-            "command": "podman compose up",
+            "command": "docker",
+            "args": [
+                "compose",
+                "run",
+                "--rm",
+                "asciidoctor"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
